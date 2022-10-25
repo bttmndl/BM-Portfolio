@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("bgimage.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+nav a h1 {
+    font-family: "Sofia", sans-serif;
+    font-size: 50px;
+    color: red;
+}
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;   
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    display: flex;
+}
+
+.left-side {
+    margin-top: 15%;
+    font-size: 20px;
+}
+.left-side span {
+    font-size: 45px;
+    color: red;
+}
+
+.bittu-text p {
+    font-family: consolas;
+} 
+.right-side {
+    margin-top : 20vh;
+    margin-left: 15vh;
+}
+.circle {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bittu {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background: url(bittu.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.bittu-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: black;
+    animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.bittu-text span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.5em;
+    transform-origin: 0 140px;
+}
