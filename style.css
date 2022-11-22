@@ -132,6 +132,9 @@ nav ul li a:hover::after {
 
 #about {
     padding: 100px 0;
+    background-image: url("bgimage.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .row {
     display: flex;
@@ -147,3 +150,26 @@ nav ul li a:hover::after {
 .about-col-1 p {
     font-size: 20px;
 }
+
+/* .......Skills....... */
+
+#skills {
+    padding: 100px 0;
+    background-image: url("bgimage.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.skills-col-1 h1 {
+    font-size: 80px;
+    font: sans-serif;
+    color: rgb(51, 246, 2);
+}
+.skills-col-1 p {
+    font-size: 20px;
+}
+.skills-col-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
